@@ -1,0 +1,90 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'register.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(480, 640)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(70, 70, 71, 31))
+        self.label.setObjectName("label")
+        self.id = QtWidgets.QLineEdit(self.centralwidget)
+        self.id.setGeometry(QtCore.QRect(150, 70, 161, 31))
+        self.id.setObjectName("id")
+        self.password = QtWidgets.QLineEdit(self.centralwidget)
+        self.password.setGeometry(QtCore.QRect(150, 110, 161, 31))
+        self.password.setObjectName("password")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(60, 110, 81, 31))
+        self.label_2.setObjectName("label_2")
+        self.group = QtWidgets.QLineEdit(self.centralwidget)
+        self.group.setGeometry(QtCore.QRect(150, 150, 161, 31))
+        self.group.setObjectName("group")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(70, 150, 71, 31))
+        self.label_3.setObjectName("label_3")
+        self.user_name = QtWidgets.QLineEdit(self.centralwidget)
+        self.user_name.setGeometry(QtCore.QRect(150, 190, 161, 31))
+        self.user_name.setObjectName("user_name")
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        self.label_4.setGeometry(QtCore.QRect(60, 190, 81, 31))
+        self.label_4.setObjectName("label_4")
+        self.label_5 = QtWidgets.QLabel(self.centralwidget)
+        self.label_5.setGeometry(QtCore.QRect(70, 230, 71, 31))
+        self.label_5.setObjectName("label_5")
+        self.sex = QtWidgets.QComboBox(self.centralwidget)
+        self.sex.setGeometry(QtCore.QRect(150, 231, 101, 31))
+        self.sex.setObjectName("sex")
+        self.sex.addItem("")
+        self.sex.addItem("")
+        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton.setGeometry(QtCore.QRect(150, 340, 141, 41))
+        self.pushButton.setObjectName("pushButton")
+        self.manage = QtWidgets.QComboBox(self.centralwidget)
+        self.manage.setGeometry(QtCore.QRect(150, 270, 101, 31))
+        self.manage.setObjectName("manage")
+        self.manage.addItem("")
+        self.manage.addItem("")
+        self.label_6 = QtWidgets.QLabel(self.centralwidget)
+        self.label_6.setGeometry(QtCore.QRect(70, 270, 71, 31))
+        self.label_6.setObjectName("label_6")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 480, 26))
+        self.menubar.setObjectName("menubar")
+        self.menu = QtWidgets.QMenu(self.menubar)
+        self.menu.setObjectName("menu")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+        self.menubar.addAction(self.menu.menuAction())
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "    *id"))
+        self.label_2.setText(_translate("MainWindow", "*password"))
+        self.label_3.setText(_translate("MainWindow", "  *group"))
+        self.label_4.setText(_translate("MainWindow", "*user name"))
+        self.label_5.setText(_translate("MainWindow", "     sex"))
+        self.sex.setItemText(0, _translate("MainWindow", "男"))
+        self.sex.setItemText(1, _translate("MainWindow", "女"))
+        self.pushButton.setText(_translate("MainWindow", "注册"))
+        self.manage.setItemText(0, _translate("MainWindow", "Y"))
+        self.manage.setItemText(1, _translate("MainWindow", "N"))
+        self.label_6.setText(_translate("MainWindow", "  *manage"))
+        self.menu.setTitle(_translate("MainWindow", "注册"))
+
